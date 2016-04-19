@@ -3,12 +3,13 @@
 <!-- Main Content -->
 @section('content')
 
-
-
 <div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+
         {!! Form::open(array('class' => 'form-password-reset')) !!}
-        <!-- App Logo -->
-            <img src="{{ URL::asset('img/login-logo.png') }}" class="login-logo">
+            <!-- App Logo -->
+            <img src="{{ URL::asset('img/login-logo.png') }}" class="login-logo img-responsive">
 
             @if (session('status'))
                 <div class="alert alert-success">
@@ -42,7 +43,9 @@
                     <button type="submit" class="btn btn-primary">Send Password Reset Link</button>
                 </div>
             </div><!-- /.box -->   
-        {!! Form::close() !!}
+            {!! Form::close() !!}
+        </div>
     </div>
+</div>
               
 @endsection

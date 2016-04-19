@@ -5,33 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="{{ URL::asset('bootstrap/css/bootstrap.min.css') }}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Admin LTE Theme -->
+    <link rel="stylesheet" href="{{ URL::asset('css/admin-lte.css') }}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ URL::asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css') }}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ URL::asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css') }}">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="{{ URL::asset('plugins/jvectormap/jquery-jvectormap-1.2.2.css') }}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="{{ URL::asset('css/skins/_all-skins.min.css') }}">
+    <!-- Custom Theme style -->
+    <link rel="stylesheet" href="{{ URL::asset('css/custom-public.css') }}">
 
     <title>Laravel Template</title>
-
-
 
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
 
-
-
     @yield('content')
-
-
 
     <!-- jQuery 2.1.4 -->
     <script src="{{ URL::asset('plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>

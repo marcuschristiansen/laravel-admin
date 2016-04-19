@@ -2,10 +2,14 @@
 
 <!-- Main Content -->
 @section('content')
-  	<div class="container">
-  		{!! Form::open(array('route' => 'post-login', 'class' => 'form-login')) !!}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+          
+      {!! Form::open(array('route' => 'post-login', 'class' => 'form-login')) !!}
         <!-- App Logo -->
-  			<img src="{{ URL::asset('img/login-logo.png') }}" class="login-logo">
+        <img src="{{ URL::asset('img/login-logo.png') }}" class="login-logo img-responsive">
 
             <!-- general form elements -->
             <div class="box box-primary">
@@ -50,7 +54,10 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div><!-- /.box -->   
-    	{!! Form::close() !!}
-	</div>
+      {!! Form::close() !!}
+
+    </div>
+  </div>
+</div>
 
 @endsection
