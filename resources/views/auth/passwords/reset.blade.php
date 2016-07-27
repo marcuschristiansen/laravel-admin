@@ -6,6 +6,9 @@
         <div class="col-md-4 col-md-offset-4">
         
         {!! Form::open(array('route' => 'password-post-reset', 'class' => 'form-password-reset')) !!}
+
+            <input type="hidden" name="token" value="{{ $token }}">
+
             <!-- App Logo -->
             <img src="{{ URL::asset('img/login-logo.png') }}" class="login-logo img-responsive">
 
